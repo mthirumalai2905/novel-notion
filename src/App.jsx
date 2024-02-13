@@ -2,7 +2,31 @@ import React from 'react';
 import './App.css';
 
 const App = () => {
+   const [isDesktop, setIsDesktop] = useState(false);
+
+  // Function to handle screen size changes
+  const handleScreenSize = () => {
+    if (window.innerWidth >= 768) {
+      setIsDesktop(true);
+    } else {
+      setIsDesktop(false);
+    }
+  };
+
+  // Add event listener for window resize
+  useEffect(() => {
+    window.addEventListener('resize', handleScreenSize);
+    // Remove event listener when component unmounts
+    return () => {
+      window.removeEventListener('resize', handleScreenSize);
+    };
+  }, []);
+
+  // CSS class name to conditionally apply based on screen size
+  const containerClassName = isDesktop ? 'container desktop-layout' : 'container';
+
   return (
+     <div className={containerClassName}>
     <div className='container'>
       <div className='banner'><img src='https://i.pinimg.com/originals/b8/28/f3/b828f31175c1818c3b34d59b9f433501.gif'/></div>
       <div className='content'>
@@ -124,6 +148,7 @@ const App = () => {
         </div>
       </div>
     </div>
+  </div>
   );
 }
 
