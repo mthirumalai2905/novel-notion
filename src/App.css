@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+h1 {
+    color: rgb(54, 51, 51);
+    white-space: nowrap; /* Ensure h1 is displayed on a single line */
+    overflow: hidden; /* Hide any overflowing text */
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflow text */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h1 {
+    margin-top: 90px;
+    margin-right: 410px;
+}
+
+.book-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: transparent;
+    margin-top: 15px;
+    padding-right: 45px;
+    width: 600px;
+    height: 800px;
+    z-index: -1;
+}
+
+.book {
+    border: 1px solid rgb(184, 180, 180);
+    border-radius: 5px;
+    padding-right: 25px;
+    padding-top: -100px; /* Note: padding-top cannot be negative */
+    width: 100%;
+    height: 120px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    margin-left: 15px;
+}
+
+p {
+    padding-left: 15px;
+    padding-top: 10px;
+    color: rgb(55, 54, 54);
+    font-size: medium;
+}
+
+.desc {
+    font-size: small;
+    padding-right: 100px;
+}
+
+pre {
+    padding-left: 15px;
+    padding-top: 2px;
+    color: rgb(31, 128, 213);
+    font-size: smaller;
+    padding-top: 5px;
+}
+
+.book {
+    display: flex;
+    flex-direction: row;
+}
+
+.book-left {
+    display: flex;
+    flex-direction: column;
+}
+.book-right{
+    padding-left: 5px;
+}
+
+.book-right img {
+    width: 135%;
+    height: 100%;
+    object-fit: cover;
+    padding-right: 75px;
+    border-radius: 100px;
+}
+
+
+/* Media query for screens smaller than 768px (tablets and mobiles) */
+@media (max-width: 768px) {
+    .book img {
+        display: none;
+    }
+
+    .content h1 {
+    margin-top: 10px;
+    margin-left: 160px;
+    }
+
+    .book-section {
+        padding-right: 5px; /* Adjust padding-right for smaller screens */
+        padding-left: 5px; /* Adjust padding-left for smaller screens */
+    }
+
+    .book {
+        width: 450px;
+        padding-right: 5px; /* Adjust padding-right for smaller screens */
+        padding-left: 5px; /* Adjust padding-left for smaller screens */
+        padding-top: 5px; /* Adjust padding-top for smaller screens */
+        margin-top: 5px; /* Adjust margin-top for smaller screens */
+        margin-left: 70px;
+        margin-right: 85px;
+    }
+
+    p {
+        padding: 5px 5px; /* Adjust padding for smaller screens */
+        margin-right: 10px;
+    }
+
+    .desc {
+        padding-right: 5px; /* Adjust padding-right for smaller screens */
+    }
+    pre{
+    padding-bottom: 5px;
+    margin-right: 50px;
+    }
+    
+}
