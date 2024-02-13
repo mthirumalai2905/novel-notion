@@ -13,8 +13,9 @@ Accessible Anywhere: Access your book collection from any device with internet c
 
 ## Installation
 Clone this repository to your local machine.
-Navigate to the project directory.
-Open the index.html file in your web browser to start using the Book Tracker.
+``` bash
+https://github.com/mthirumalai2905/novel-notion.git
+```
 
 ## Usage
 Open the Book Tracker in your web browser.
