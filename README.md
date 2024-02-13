@@ -6,9 +6,13 @@ Book Tracker is a project designed to help users manage their book collections e
 
 ## Features
 Intuitive Interface: Navigate your book collection with ease through a user-friendly Notion UI.
+
 Effortless Organization: Keep track of books by title, author, genre, and more, all within Notion's versatile database system.
+
 Reading Progress Tracking: Monitor your reading journey by recording progress and setting reading goals.
+
 Customizable Design: Adapt the layout and features to suit your personal preferences and needs.
+
 Accessible Anywhere: Access your book collection from any device with internet connectivity, thanks to Notion's cloud-based platform.
 
 ## Installation
